@@ -10,7 +10,12 @@ def style_background_home():
                .stApp {
                     background: #5865F2 !important;
                 }
-
+                
+                .stApp div[data-testid="stcolumn"]{
+                    background-color: #E0E3FF !important;
+                    padding:2.5rem !important;
+                    border-radius: 5rem !important;
+                }
         </style>
 
                 """
@@ -60,12 +65,12 @@ def style_base_layout():
             
             h2 {
                 font-family: 'Climate Crisis', sans-serif !important;
-                font-size:2rem !important;
+                font-size: 2rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
             }
 
-            h3, h4, p, span {
+            h3, h4, p, {
                 font-family: 'Outfit', sans-serif !important;
             }
 
