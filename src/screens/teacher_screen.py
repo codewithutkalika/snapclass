@@ -132,7 +132,12 @@ def teacher_tab_take_attendance():
                 all_detected_ids = {}
 
                 for idx, img in enumerate(st.session_state.attendance_images):
-                    img_np = np.array(Image.open(img).convert('RGB'))
+                    if isinstance(img, Image.Image):
+                        pil_img = img
+                    else:
+                        pil_img = Image.open(img)
+                        
+                    img_np = np.array(pil_img.convert('RGB'))
                     detected, _, _ = predict_attendance(img_np)
 
                     if detected:
