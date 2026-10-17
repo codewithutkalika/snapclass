@@ -22,4 +22,3 @@ resemblyzer
 
 # QR codes
 segno
-
