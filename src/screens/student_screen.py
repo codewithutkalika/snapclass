@@ -189,4 +189,3 @@ def student_screen():
 
 
     footer_dashboard()
-
