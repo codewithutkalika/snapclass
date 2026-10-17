@@ -7,7 +7,7 @@ def style_base_background():
         <style>
                
                .stApp {
-                    background: #E6E6FA !important;
+                    background: #F0F8FF !important;
                 }
                 
                 .stApp div[data-testid="stColumn"]{
@@ -15,6 +15,18 @@ def style_base_background():
                     padding:1.5rem !important;
                     border-radius:3rem !important;
                 }
+
+                .stTextInput div[data-baseweb="input"],
+                .stTextInput div[data-baseweb="base-input"],
+                .stTextInput > div > div {
+                background-color: #FFFFFF !important;
+                border: 1px solid #0077BE !important;
+                border-radius: 0.75rem !important;
+            }
+            .stTextInput input {
+                background-color: transparent !important;
+                color: #003B5C !important;
+            }
         </style>
 
                 """
@@ -27,9 +39,21 @@ def style_base_dashboard():
         <style>
                
                .stApp {
-                    background: #D6D0F5 !important;
+                    background: #F0F8FF !important;
                 }
-
+                
+                
+               .stTextInput div[data-baseweb="input"],
+               .stTextInput div[data-baseweb="base-input"],
+               .stTextInput > div > div {
+                background-color: #FFFFFF !important;
+                border: 1px solid #0077BE !important;
+                border-radius: 0.75rem !important;
+            }
+            .stTextInput input {
+                background-color: transparent !important;
+                color: #003B5C !important;
+            }
         </style>
 
                 """
@@ -72,6 +96,7 @@ def style_base_layout():
                 font-size: 3.5rem !important;
                 line-height: 1.1 !important;
                 margin-bottom: 0rem !important;
+                color: #0077BE !important;
             }
 
             
@@ -80,16 +105,18 @@ def style_base_layout():
                 font-size: 2rem !important;
                 line-height: 1.1 !important;
                 margin-bottom: 0rem !important;
+                color: #003B5C !important;
             }
 
             h3, h4, p, {
                 font-family: 'Outfit', sans-serif !important;
+                color: #003B5C !important;
             }
 
             
             button {
                 border-radius: 1.5rem !important;
-                background-color: #B47A98 !important;
+                background-color: #0077BE !important;
                 color: #FFFFFF !important;
                 padding: 10px 20px !important;
                 border: none !important;
@@ -98,7 +125,7 @@ def style_base_layout():
 
             button[kind="secondary"] {
                 border-radius: 1.5rem !important;
-                background-color: #A83D68 !important;
+                background-color: #0077BE !important;
                 color: #FFFFFF !important;
                 padding: 10px 20px !important;
                 border: none !important;
@@ -107,8 +134,8 @@ def style_base_layout():
 
             button[kind="tertiary"] {
                 border-radius: 1.5rem !important;
-                background-color: #E6DDEB !important;
-                color: #5C4B65 !important;
+                background-color: #0077BE !important;
+                color: #FFFFFF !important;
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: all 0.25s ease-in-out !important;
@@ -116,15 +143,18 @@ def style_base_layout():
              
             button:hover{
                 transform: scale(1.05) !important;
-                background: #9F6687 !important;
+                background-color: #005F99 !important;
+                color: #FFFFFF !important;
             }
 
             button[kind:"secondary"]:hover{
-                background: #B5A3CF !important;
+                background-color: #005F99 !important;
+                color: #FFFFFF !important;
             }
 
             button[kind:"tertiary"]:hover{
-                background: #D5C7DD !important;
+                background-color: #005F99 !important;
+                color: #FFFFFF !important;
             }
 
         </style>
