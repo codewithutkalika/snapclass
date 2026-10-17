@@ -66,12 +66,3 @@ def voice_attendance_dialog(selected_subject_id):
         )
 
         show_attendance_result(df_results, logs)
-        
-        
-
-
-
-
-
-
-
