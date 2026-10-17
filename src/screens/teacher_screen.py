@@ -340,4 +340,3 @@ def teacher_screen_register():
             st.rerun
 
     footer_dashboard()
-    
