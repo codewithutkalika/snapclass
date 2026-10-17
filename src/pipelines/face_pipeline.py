@@ -20,7 +20,7 @@ def load_dlib_models():
 
     return detector, sp, facerec
 
-def get_face_embeddings(img_np):
+def get_face_embedding(img_np):
     detector, sp, facerec = load_dlib_models()
     faces = detector(img_np, 1)
 
@@ -28,7 +28,7 @@ def get_face_embeddings(img_np):
 
     for face in faces:
         shape = sp(img_np, face)
-        face_descriptor = facerec.compute_face_descriptor(img_np, shape, 1) #128 embedding
+        face_descriptor = facerec.compute_face_descriptor(img_np, shape, 1)
 
         encodings.append(np.array(face_descriptor))
     return encodings
@@ -67,10 +67,9 @@ def train_classifier():
     return bool(model_data)
 
 def predict_attendance(class_img_np):
-    encodings = get_face_embeddings(class_img_np)
+    encodings = get_face_embedding(class_img_np)
 
     detected_student = {}
-
 
     model_data = get_trained_model()
 
@@ -97,4 +96,5 @@ def predict_attendance(class_img_np):
 
         if best_match_score <= resemblance_threshold:
             detected_student[predicted_id] = True
+            
     return detected_student, all_students, len(encodings)
