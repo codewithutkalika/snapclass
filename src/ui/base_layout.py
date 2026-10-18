@@ -13,11 +13,26 @@ def style_base_background():
                 .stTextInput div[data-baseweb="input],
                 .stTextInput div[data-baseweb="base-input],
                 .stTextInput > div > div {
-                    background-color: #E6F3FA !important}
-                .stApp div[data-testid="stColumn"] {
-                    background-color: #FFFFFF !important;
-                    padding: 1.5rem !important;
-                    border-radius: 3rem !important;
+                    background-color: #E6F3FA !important;
+                    border: 1px solid #0077BE !important;
+                    border-radius: 0.75rem !important;
+                }
+                .stTextInput input {
+                    background-color: transparent !important;
+                    color: #003B5C !important;
+                }
+
+                .stSelectbox div[data-baseweb="select"] > div {
+                     background-color: #E6F3FA !important;
+                     border: 1px solid #0077BE !important;
+                     border-radius: 0.75rem !important;
+                }
+
+                div[data-testid="stDataFrame"] {
+                     background-color: #E6F3FA !important;
+                     border: 1px solid #0077BE !important;
+                     border-radius: 0.75rem !important;
+                     padding: 4px !important;
                 }
         </style>
                 """
