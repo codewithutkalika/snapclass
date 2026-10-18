@@ -10,25 +10,16 @@ def style_base_background():
                     background: #F0F8FF !important;
                 }
                 
-                .stApp div[data-testid="stColumn"]{
-                    background-color: #FFFFFF !important;
-                    padding:1.5rem !important;
-                    border-radius:3rem !important;
-                }
-
-                .stTextInput div[data-baseweb="input"],
-                .stTextInput div[data-baseweb="base-input"],
+                .stTextInput div[data-baseweb="input],
+                .stTextInput div[data-baseweb="base-input],
                 .stTextInput > div > div {
-                background-color: #FFFFFF !important;
-                border: 1px solid #0077BE !important;
-                border-radius: 0.75rem !important;
-            }
-            .stTextInput input {
-                background-color: transparent !important;
-                color: #003B5C !important;
-            }
+                    background-color: #E6F3FA !important}
+                .stApp div[data-testid="stColumn"] {
+                    background-color: #FFFFFF !important;
+                    padding: 1.5rem !important;
+                    border-radius: 3rem !important;
+                }
         </style>
-
                 """
             ,unsafe_allow_html=True)
 
@@ -40,23 +31,9 @@ def style_base_dashboard():
                
                .stApp {
                     background: #F0F8FF !important;
-                }
-                
-                
-               .stTextInput div[data-baseweb="input"],
-               .stTextInput div[data-baseweb="base-input"],
-               .stTextInput > div > div {
-                background-color: #FFFFFF !important;
-                border: 1px solid #0077BE !important;
-                border-radius: 0.75rem !important;
-            }
-            .stTextInput input {
-                background-color: transparent !important;
-                color: #003B5C !important;
-            }
-        </style>
-
-                """
+                }  
+        </style>   
+            """
             ,unsafe_allow_html=True)
 
     
@@ -105,10 +82,10 @@ def style_base_layout():
                 font-size: 2rem !important;
                 line-height: 1.1 !important;
                 margin-bottom: 0rem !important;
-                color: #003B5C !important;
+                color: #0077BE !important;
             }
 
-            h3, h4, p, {
+            h3, h4, p, label, li {
                 font-family: 'Outfit', sans-serif !important;
                 color: #003B5C !important;
             }
@@ -141,18 +118,22 @@ def style_base_layout():
                 transition: all 0.25s ease-in-out !important;
             }
              
+            button p {
+                color: #FFFFFF !important;
+            }
+
             button:hover{
                 transform: scale(1.05) !important;
                 background-color: #005F99 !important;
                 color: #FFFFFF !important;
             }
 
-            button[kind:"secondary"]:hover{
+            button[kind="secondary"]:hover{
                 background-color: #005F99 !important;
                 color: #FFFFFF !important;
             }
 
-            button[kind:"tertiary"]:hover{
+            button[kind="tertiary"]:hover{
                 background-color: #005F99 !important;
                 color: #FFFFFF !important;
             }
