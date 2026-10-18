@@ -1,24 +1,22 @@
 streamlit
 
+# database and auth
+supabase
+bcrypt
+
 # utilities
 numpy
 pandas
 pillow
+segno
+setuptools
 
 # face recognition
 scikit-learn
 dlib-bin
 face_recognition
-git+https://github.com/ageitgey/face_recognition_models
-setuptools
-
-# database and auth
-supabase
-bcrypt
+face_recognition_models
 
 # voice recognition
-librosa 
+librosa
 resemblyzer
-
-# QR codes
-segno
