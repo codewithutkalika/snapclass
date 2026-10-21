@@ -1,4 +1,4 @@
-# SnapClass: AI Attendance System
+# SnapClass: Intelligent AI Attendance
 
 A face and voice recognition attendance app for classrooms. Teachers take attendance from classroom photos or a voice recording, and the app marks each enrolled student Present or Absent. Students enroll in subjects with a subject code and track their own attendance.
 
