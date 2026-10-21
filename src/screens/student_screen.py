@@ -176,7 +176,7 @@ def student_screen():
                                 train_classifier()
                                 st.session_state.is_logged_in = True
                                 st.session_state.user_role = 'student'
-                                st.session_state.student_data = response_student[0]
+                                st.session_state.student_data = response_data[0]
                                 st.toast(f'Profile Created! Hi {new_name}!')
                                 time.sleep(1)
                                 st.rerun()
