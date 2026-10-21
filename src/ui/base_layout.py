@@ -2,42 +2,50 @@ import streamlit as st
 
 
 def style_base_background():
-
     st.markdown("""
-        <style>
-               
-               .stApp {
-                    background: #F0F8FF !important;
-                }
-                
-                .stTextInput div[data-baseweb="input],
-                .stTextInput div[data-baseweb="base-input],
-                .stTextInput > div > div {
-                    background-color: #E6F3FA !important;
-                    border: 1px solid #0077BE !important;
-                    border-radius: 0.75rem !important;
-                }
-                .stTextInput input {
-                    background-color: transparent !important;
-                    color: #003B5C !important;
-                }
+    <style>
+        /* Page background */
+        .stApp {
+            background-color: #F0F8FF !important;
+        }
 
-                .stSelectbox div[data-baseweb="select"] > div {
-                     background-color: #E6F3FA !important;
-                     border: 1px solid #0077BE !important;
-                     border-radius: 0.75rem !important;
-                }
+        /* Force text input boxes to white */
+        div[data-testid="stTextInput"] div[data-baseweb="base-input"],
+        div[data-testid="stTextInput"] div[data-baseweb="input"] {
+            background-color: #FFFFFF !important;
+            border: 1px solid #0077BE !important;
+            border-radius: 0.75rem !important;
+        }
 
-                div[data-testid="stDataFrame"] {
-                     background-color: #E6F3FA !important;
-                     border: 1px solid #0077BE !important;
-                     border-radius: 0.75rem !important;
-                     padding: 4px !important;
-                }
-        </style>
-                """
-            ,unsafe_allow_html=True)
+        div[data-testid="stTextInput"] input {
+            background-color: #FFFFFF !important;
+            color: #1E293B !important;
+            -webkit-text-fill-color: #1E293B !important;
+        }
 
+        /* Number input */
+        div[data-testid="stNumberInput"] input {
+            background-color: #FFFFFF !important;
+            color: #1E293B !important;
+            -webkit-text-fill-color: #1E293B !important;
+        }
+
+        /* Text area */
+        div[data-testid="stTextArea"] textarea {
+            background-color: #FFFFFF !important;
+            color: #1E293B !important;
+            -webkit-text-fill-color: #1E293B !important;
+            border: 1px solid #0077BE !important;
+        }
+
+        /* Dropdown */
+        div[data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+            background-color: #FFFFFF !important;
+            color: #1E293B !important;
+            border: 1px solid #0077BE !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 def style_base_dashboard():
 
@@ -157,3 +165,12 @@ def style_base_layout():
 
                 """
             ,unsafe_allow_html=True)
+
+def style_base_dashboard():
+    st.markdown("""
+        <style>
+            .stApp {
+                background: #F0F8FF !important;
+            }
+        </style>
+    """, unsafe_allow_html=True)
