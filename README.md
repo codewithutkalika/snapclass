@@ -4,6 +4,24 @@ A face and voice recognition attendance app for classrooms. Teachers take attend
 
 Team project. Built with Python, Streamlit and Supabase (PostgreSQL)
 
+## Screenshots
+
+** Home **
+
+<img width="500" alt="home" src="https://github.com/user-attachments/assets/e825e1d4-df41-4f9b-b6e7-46389bf129b6" />
+
+** Student Dashboard **
+
+<img width="500" alt="student" src="https://github.com/user-attachments/assets/53c9c12c-f1b1-4b18-9740-b43ef4df42b9" />
+
+** Take Attendance (teachers) **
+
+<img width="500" alt="teacher" src="https://github.com/user-attachments/assets/10a41553-043f-40e3-9650-5fda8db04673" />
+
+** Attendance Records **
+
+<img width="500" alt="records" src="https://github.com/user-attachments/assets/e064821d-6062-4d7c-9306-c26d50061551" />
+
 ## Features
 
 **Students**
